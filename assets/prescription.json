@@ -1,0 +1,48 @@
+{
+ "data":[
+   {
+    "name": "Acne",
+    "overview": "A skin condition that occurs when hair follicles plug with oil and dead skin cells.\nAcne is most common in teenagers and young adults.\nSymptoms range from uninflamed blackheads to pus-filled pimples or large, red and tender bumps.\nTreatments include over-the-counter creams and cleanser, as well as prescription antibiotics.",
+    "symptoms": "Symptoms range from uninflamed blackheads to pus-filled pimples or large, red and tender bumps.",
+    "treatment": "Treatments include over-the-counter creams and cleanser, as well as prescription antibiotics."
+
+  },
+  {
+    "name":"Actinic keratosis",
+    "overview":"A rough, scaly patch on the skin caused by years of sun exposure.\nActinic keratoses usually affects older adults. Reducing sun exposure can help reduce risk.\nIt is most common on the face, lips, ears, back of hands, forearms, scalp and neck. The rough, scaly skin patch enlarges slowly and usually causes no other signs or symptoms. A lesion may take years to develop.\nBecause it can become cancerous, it's usually removed as a precaution.",
+    "symptoms":"Requires a medical diagnosis\nIt is most common on the face, lips, ears, back of hands, forearms, scalp and neck. The rough, scaly skin patch enlarges slowly and usually causes no other signs or symptoms. A lesion may take years to develop.",
+    "treatment":"Because it can become cancerous, it's usually removed as a precaution."
+  },
+  {
+    "name": "Eczema",
+    "overview": "Eczema is a skin condition that causes dry and itchy patches of skin. It’s a common condition that isn’t contagious.",
+    "symptoms": "Symptoms of eczema can flare up if you contact an irritant or an allergen.",
+    "treatment":"There are treatments available to help you manage symptoms, but there isn’t a cure"
+  },
+  {
+    "name":"Melanoma",
+    "overview": "The most serious type of skin cancer.\nMelanoma occurs when the pigment-producing cells that give colour to the skin become cancerous.\nSymptoms might include a new, unusual growth or a change in an existing mole. Melanomas can occur anywhere on the body.",
+    "symptoms": "Requires a medical diagnosis\nSymptoms might include a new, unusual growth or a change in an existing mole. Melanomas can occur anywhere on the body.",
+    "treatment": "Treatment depends on stage\nTreatment may involve surgery, radiation, medication or in some cases, chemotherapy."
+  },
+  {
+    "name": "Tinea Ringworm",
+    "overview": "A highly contagious fungal infection of the skin or scalp.\nRingworm is spread by skin-to-skin contact or by touching an infected animal or object.\nRingworm is typically scaly and may be red and itchy. Ringworm of the scalp is common in children, where it may cause bald patches.",
+    "symptoms": "Usually self-diagnosable\nRingworm is typically scaly and may be red and itchy. Ringworm of the scalp is common in children, where it may cause bald patches.",
+    "treatment": "Treatment consists of self care and antifungals\nThe treatment for ringworm is antifungal medication."
+  },
+  {
+    "name": "Warts Molluscum",
+    "overview": "A viral skin infection that results in round, firm, painless bumps.\nThe condition spreads through contact with an infected person or a contaminated object.\nThough painless, the small bumps might itch. Scratched bumps can spread infection to surrounding skin.",
+    "symptoms": "Requires a medical diagnosis\nThough painless, the small bumps might itch. Scratched bumps can spread infection to surrounding skin.",
+    "treatment": "Treatment consists of procedures\nThe bumps usually disappear on their own. In rare cases, the bumps can be removed using medication or other procedures."
+
+  },
+  {
+    "name": "Vascular Tumors",
+    "overview": "A vascular tumor is a tumor of vascular origin; a soft tissue growth that can be either benign or malignant, formed from blood vessels or lymph vessels.",
+    "symptoms": "An area of spidery veins or lightened or discolored skin may appear before the hemangioma does.",
+    "treatment": "Treatment may involve surgery, radiation, medication or in some cases, chemotherapy"
+  }
+  ]
+}

@@ -1,0 +1,7 @@
+0 Acne
+1 Actinic keratosis
+2 Eczema
+3 Melanoma
+4 Tinea Ringworm
+5 Warts Molluscum
+6 Vascular Tumors
