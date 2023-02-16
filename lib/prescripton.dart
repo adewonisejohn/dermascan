@@ -13,6 +13,8 @@ import 'package:printing/printing.dart';
 import 'dart:io';
 import 'package:tflite/tflite.dart';
 import 'package:image/image.dart' as img;
+import 'package:url_launcher/url_launcher.dart';
+
 
 
 class prescription extends StatefulWidget {
@@ -150,6 +152,18 @@ class _prescriptionState extends State<prescription> {
 
   }
 
+  Future<void>_find_dermatologist()async{
+    final link="www.google.com/maps/search/dermatologist+around+me";
+    final url ='https:$link';
+    if(await canLaunchUrl(Uri.parse(url))){
+      launchUrl(
+        Uri.parse(url),
+        mode:LaunchMode.externalNonBrowserApplication,
+
+      );
+    }
+  }
+
 
 
   @override
@@ -213,22 +227,7 @@ class _prescriptionState extends State<prescription> {
               ),
               GestureDetector(
                 onTap:(){
-                  showCupertinoModalBottomSheet(
-                    backgroundColor:Colors.white,
-                    context: context,
-                    builder: (context) => Container(
-                      height:MediaQuery.of(context).size.height*0.6,
-                      child:GoogleMap(
-                        zoomGesturesEnabled:true,
-                        zoomControlsEnabled:false,
-                        initialCameraPosition:CameraPosition(target:currentLocation,zoom:10),
-                        onMapCreated:(controller){
-                          mapController=controller;
-                        },
-
-                      )
-                    ),
-                  );
+                  _find_dermatologist();
                 },
                 child: Container(
                   width:MediaQuery.of(context).size.width*0.65,
