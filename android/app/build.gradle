@@ -26,6 +26,12 @@ apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
+
+    aaptOptions {
+        noCompress 'tflite'
+        noCompress 'lite'
+    }
+
     compileSdkVersion 33
     ndkVersion flutter.ndkVersion
 
@@ -34,10 +40,6 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    aaptOptions {
-        noCompress 'tflite'
-        noCompress 'lite'
-    }
 
     kotlinOptions {
         jvmTarget = '1.8'

@@ -4,7 +4,6 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:dermascan/main.dart';
-import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:pdf/pdf.dart';
@@ -153,12 +152,12 @@ class _prescriptionState extends State<prescription> {
   }
 
   Future<void>_find_dermatologist()async{
-    final link="www.google.com/maps/search/dermatologist+around+me";
+    final link="www.bing.com/maps?q=dermatologist+near+me";
     final url ='https:$link';
     if(await canLaunchUrl(Uri.parse(url))){
       launchUrl(
         Uri.parse(url),
-        mode:LaunchMode.externalNonBrowserApplication,
+        mode:LaunchMode.externalApplication,
 
       );
     }
