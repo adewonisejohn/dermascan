@@ -4,8 +4,6 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:dermascan/main.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
@@ -26,14 +24,12 @@ class prescription extends StatefulWidget {
 }
 
 class _prescriptionState extends State<prescription> {
-  late GoogleMapController mapController;
   var predicted_data;
   var data;
   bool is_predicting=false;
   var output ;
   var prediction_index=0;
 
-  static const LatLng currentLocation = LatLng(9.0820,8.6753);
   void load_data() async{
     var index=this.prediction_index.toString();
     print('about to load data');
@@ -45,9 +41,7 @@ class _prescriptionState extends State<prescription> {
     print("predicted index is ${this.prediction_index}--------------------------");
     print(data["name"]);
 
-    Position position = await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
     print("----------------------------------------------------------");
-    print(position);
 
   }
 
